@@ -1,6 +1,6 @@
 # DiscordRPCEditor
 
-This program was made so you can easily change/set rich presence for your Discord profile. To create a rich presence, you can either use the default application already set up, or you can create your own.
+This program was made so you can easily change/set rich presence for your Discord profile. To create a rich presence, you can either use the default application already set up, or you can create your own. If you are going to compile this application, build DiscordRPCClient (Discord RPC Editor) first and then replace the existing Discord RPC Editor in Discord RPC Client to create an installer. You could also use Discord RPC Editor if you wanted to install it anywhere, as long as the two dependencies stay with it.
 
 # Creating Discord Applications for Rich Presence
 
