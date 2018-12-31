@@ -1,0 +1,17 @@
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.Form1.resources
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.Properties.Resources.resources
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.csproj.GenerateResource.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.csproj.CoreCompileInputs.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.CustomRPC.resources
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\bin\Debug\DiscordRPC.dll
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.csproj.CopyComplete
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\bin\Debug\Discord RPC Editor.exe.config
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\bin\Debug\Discord RPC Editor.exe
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\bin\Debug\Discord RPC Editor.pdb
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\Discord RPC Editor.exe
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\Discord RPC Editor.pdb
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.Preparing.resources
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.csproj.ResolveComReference.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\DiscordRPCClient\obj\Debug\DiscordRPCClient.csprojAssemblyReference.cache

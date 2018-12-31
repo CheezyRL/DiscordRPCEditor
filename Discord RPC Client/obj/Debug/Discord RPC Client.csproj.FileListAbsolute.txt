@@ -1,0 +1,10 @@
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\bin\Debug\Discord RPC Client.exe.config
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\bin\Debug\Discord RPC Client.exe
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\bin\Debug\Discord RPC Client.pdb
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord RPC Client.csproj.ResolveComReference.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord_RPC_Client.Properties.Resources.resources
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord RPC Client.csproj.GenerateResource.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord RPC Client.csproj.CoreCompileInputs.cache
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord RPC Client.exe
+C:\Users\Ben\source\repos\DiscordRPCClient\Discord RPC Client\obj\Debug\Discord RPC Client.pdb
