@@ -93,9 +93,39 @@ namespace Discord_RPC_Client.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] DRPCE_Updater {
+            get {
+                object obj = ResourceManager.GetObject("DRPCE_Updater", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] MySql_Data {
+            get {
+                object obj = ResourceManager.GetObject("MySql_Data", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] Newtonsoft_Json {
             get {
                 object obj = ResourceManager.GetObject("Newtonsoft_Json", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Updater {
+            get {
+                object obj = ResourceManager.GetObject("Updater", resourceCulture);
                 return ((byte[])(obj));
             }
         }

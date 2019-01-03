@@ -1,4 +1,5 @@
 ﻿using DiscordRPC;
+using DRPCE_Updater;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -404,6 +406,28 @@ namespace DiscordRPCClient
         private void label14_Click_1(object sender, EventArgs e)
         {
             Process.Start(Path.Combine(Environment.CurrentDirectory, "discord-rpc.txt"));
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+            string currentversion = Assembly.GetEntryAssembly().GetName().Version.ToString().Substring(0, Assembly.GetEntryAssembly().GetName().Version.ToString().Length - 2);
+            if (Updater.UpdateAvailable("v" + currentversion))
+            {
+                DialogResult dr = MessageBox.Show("There is an update available!\r\nCurrent Version: v" +
+                    " " + currentversion + "\r\nLatest Version: " + Updater.GetLatestVersion() + "\r\n" +
+                    "Update?", "Updater", MessageBoxButtons.YesNo);
+                if (dr == DialogResult.Yes)
+                {
+                    Process.Start("Updater.exe", "");
+                }
+            }
+            else MessageBox.Show("You are on the latest version.");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            string currentversion = Assembly.GetEntryAssembly().GetName().Version.ToString().Substring(0, Assembly.GetEntryAssembly().GetName().Version.ToString().Length - 2);
+            MessageBox.Show("Current Version: v" + currentversion + "\r\n\r\nNeed help? Go to https://discord.gg/H9vQYzU and let me know in the help channel.", "Discord Rich Presence Editor", MessageBoxButtons.OK);
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

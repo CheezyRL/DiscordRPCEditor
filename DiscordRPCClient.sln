@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord RPC Editor", "Disco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord RPC Client", "Discord RPC Client\Discord RPC Client.csproj", "{FBCEED74-DCA4-4CC5-AE7B-3A04786F5742}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIUpdater", "GUIUpdater\GUIUpdater.csproj", "{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,18 @@ Global
 		{FBCEED74-DCA4-4CC5-AE7B-3A04786F5742}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBCEED74-DCA4-4CC5-AE7B-3A04786F5742}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBCEED74-DCA4-4CC5-AE7B-3A04786F5742}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BFCB48D-54FD-40FA-A468-B9A153023ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BFCB48D-54FD-40FA-A468-B9A153023ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BFCB48D-54FD-40FA-A468-B9A153023ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BFCB48D-54FD-40FA-A468-B9A153023ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5196722-32E5-4726-9F89-78DE8050C3F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5196722-32E5-4726-9F89-78DE8050C3F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5196722-32E5-4726-9F89-78DE8050C3F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5196722-32E5-4726-9F89-78DE8050C3F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

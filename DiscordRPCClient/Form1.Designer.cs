@@ -70,6 +70,7 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -102,6 +103,7 @@
             this.label1.Size = new System.Drawing.Size(264, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Discord Rich Presence Editor";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -411,7 +413,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.label8.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(47, 29);
+            this.label8.Location = new System.Drawing.Point(47, 39);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(169, 25);
             this.label8.TabIndex = 25;
@@ -423,7 +425,7 @@
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.label9.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Crimson;
-            this.label9.Location = new System.Drawing.Point(222, 29);
+            this.label9.Location = new System.Drawing.Point(222, 39);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 25);
             this.label9.TabIndex = 26;
@@ -586,12 +588,25 @@
             this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label14.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label14.Location = new System.Drawing.Point(1159, 392);
+            this.label14.Location = new System.Drawing.Point(203, 580);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(123, 25);
             this.label14.TabIndex = 36;
             this.label14.Text = "Discord RPC Log";
             this.label14.Click += new System.EventHandler(this.label14_Click_1);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.label15.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Bold);
+            this.label15.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label15.Location = new System.Drawing.Point(47, 580);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(135, 25);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "Check for Updates";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // Form1
             // 
@@ -599,6 +614,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1366, 638);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBox7);
@@ -699,6 +715,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
 

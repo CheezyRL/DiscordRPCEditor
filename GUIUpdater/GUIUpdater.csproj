@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FBCEED74-DCA4-4CC5-AE7B-3A04786F5742}</ProjectGuid>
+    <ProjectGuid>{C09D683F-D01B-4EFF-AF4D-B4178CDFEF72}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Discord_RPC_Client</RootNamespace>
-    <AssemblyName>Discord RPC Client</AssemblyName>
+    <RootNamespace>GUIUpdater</RootNamespace>
+    <AssemblyName>Updater</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,12 +31,11 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +55,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -64,7 +66,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -80,36 +81,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="IWshRuntimeLibrary">
-      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\app.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DiscordRPC.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Newtonsoft.Json.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MySql.Data.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Discord RPC Editor.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DRPCE_Updater.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Updater.exe" />
+    <ProjectReference Include="..\DRPCE_Updater\DRPCE_Updater.csproj">
+      <Project>{1bfcb48d-54fd-40fa-a468-b9a153023ecf}</Project>
+      <Name>DRPCE_Updater</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

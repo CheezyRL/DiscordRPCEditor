@@ -29,16 +29,34 @@ namespace Discord_RPC_Client
                 fs1.Write(Properties.Resources.DiscordRPC, 0, Properties.Resources.DiscordRPC.Length);
                 fs1.Close();
 
-                progressBar1.Value = 78;
+                progressBar1.Value = 40;
 
                 fs1 = new FileStream(Path.Combine(info.FullName, "Newtonsoft.Json.dll"), FileMode.Create, FileAccess.Write);
                 fs1.Write(Properties.Resources.Newtonsoft_Json, 0, Properties.Resources.Newtonsoft_Json.Length);
                 fs1.Close();
 
-                progressBar1.Value = 90;
+                progressBar1.Value = 50;
 
                 fs1 = new FileStream(Path.Combine(info.FullName, "Discord RPC Editor.exe"), FileMode.Create, FileAccess.Write);
                 fs1.Write(Properties.Resources.Discord_RPC_Editor, 0, Properties.Resources.Discord_RPC_Editor.Length);
+                fs1.Close();
+
+                progressBar1.Value = 70;
+
+                fs1 = new FileStream(Path.Combine(info.FullName, "Updater.exe"), FileMode.Create, FileAccess.Write);
+                fs1.Write(Properties.Resources.Updater, 0, Properties.Resources.Updater.Length);
+                fs1.Close();
+
+                progressBar1.Value = 80;
+
+                fs1 = new FileStream(Path.Combine(info.FullName, "DRPCE_Updater.dll"), FileMode.Create, FileAccess.Write);
+                fs1.Write(Properties.Resources.DRPCE_Updater, 0, Properties.Resources.DRPCE_Updater.Length);
+                fs1.Close();
+
+                progressBar1.Value = 90;
+
+                fs1 = new FileStream(Path.Combine(info.FullName, "MySql.Data.dll"), FileMode.Create, FileAccess.Write);
+                fs1.Write(Properties.Resources.MySql_Data, 0, Properties.Resources.MySql_Data.Length);
                 fs1.Close();
 
                 progressBar1.Value = 100;
@@ -52,9 +70,9 @@ namespace Discord_RPC_Client
                 WshShell shell = new WshShell();
                 IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
 
-                shortcut.Description = "Points to the Discord RPC Editor.";   // The description of the shortcut
-                shortcut.IconLocation = Path.Combine(info.FullName, "discord.ico");           // The icon of the shortcut
-                shortcut.TargetPath = Path.Combine(info.FullName, "Discord RPC Editor.exe");                 // The path of the file that will launch when the shortcut is run
+                shortcut.Description = "Points to the Discord RPC Editor.";
+                shortcut.IconLocation = Path.Combine(info.FullName, "discord.ico");
+                shortcut.TargetPath = Path.Combine(info.FullName, "Discord RPC Editor.exe");
                 shortcut.WorkingDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Discord RPC Editor");
                 shortcut.Save();
             }
